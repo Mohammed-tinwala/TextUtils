@@ -27,16 +27,12 @@ export default function Navbar(props) {    // Here i created a props which works
                             <li className="nav-item">
                                 <a className="nav-link active" href="#">{props.Contact}</a>
                             </li>
-                        </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                            <button className="btn btn-primary" type="submit">Search</button>
-                        </form>
-                    </div>
+                        </ul>                    
                         <div className={`form-check form-switch mx-2 text-${props.mode === 'light'?'dark':'light'}`}>
                             <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"></input>
                                 <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.btnText}</label>
                         </div>
+                    </div>
                 </div>
             </nav>
         </>
