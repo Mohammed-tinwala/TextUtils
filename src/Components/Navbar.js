@@ -17,12 +17,12 @@ export default function Navbar(props) {    // Here i created a props which works
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                {/* <Link className="nav-link active" aria-current="page" to="/home">Home</Link> */}
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                                {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
                             </li>
                             <li className="nav-item">
-                                {/* <Link className="nav-link active" to="/about">{props.about}</Link> */}
-                                <a className="nav-link active" href="#">{props.about}</a>
+                                <Link className="nav-link active" to="/about">{props.about}</Link>
+                                {/* <a className="nav-link active" href="#">{props.about}</a> */}
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link active" href="#">{props.Contact}</a>
